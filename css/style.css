@@ -1,13 +1,25 @@
-/* #brand-logo {
-    width: 200px;
-    height: auto;
 
-} */
-
-/* .navbar-brand,
-.nav-link {
-    color: #fff;
+/* Clases modificadas al Carousel */
+.carousel-caption {
+    bottom: 20rem;
+    right: 10%; 
+    left: 55%;
+    text-align: right;
 }
- */
+
+.carousel-caption h5 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.carousel-caption p,
+.carousel-caption button {
+    font-size: 1.1em;
+} 
+
+/* Oscurece imágenes del Carousel */
+.oscura {
+    filter: brightness(60%) ;
+}
 
 
