@@ -1,68 +1,30 @@
-
 /* Clases modificadas al Carousel */
 .carousel-caption {
-    bottom: 18rem;
-    right: 10%; 
-    left: 55%;
-    text-align: right;
+  bottom: 18rem;
+  right: 10%;
+  left: 55%;
+  text-align: right;
 }
 
-.carousel-caption h5 {
-    font-size: 2.5em;
-    font-weight: bold;
+/* arregla el problema del caption en Responsive */
+@media screen and (max-width: 1240px) {
+  .carousel-caption {
+      bottom: 12rem;
+      /* right: 10%;  */
+      left: 45%;
+  }
 }
 
-.carousel-caption p,
-.carousel-caption button {
-    font-size: 1.1em;
-} 
-
-/* Oscurece imágenes del Carousel */
-.oscura {
-    filter: brightness(60%) ;
+@media screen and (max-width: 992px) {
+  .carousel-caption {
+      bottom: 8rem;
+      /* right: 15%;  */
+      left: 40%;
+  }
 }
 
-/* Clase para el link verde del Navbar */
-.verde {
-    color: green;
-}
-
-
-/* Padding del Navbar */
-.px-10 {
-  padding-right: 11rem;
-  padding-left: 10rem;
-}
-
-@media screen and (max-width: 1240px){
-    .px-10 {
-        padding-right: 7rem !important;
-        padding-left: 6rem !important;
-      }
-    
-    .carousel-caption {
-       bottom: 12rem;
-       /* right: 10%;  */
-       left: 45%;
-      }
-}
-@media screen and (max-width: 992px){
-    .px-10 {
-        padding-right: 5rem !important;
-        padding-left: 4.5rem !important;
-      }
-    .carousel-caption {
-       bottom: 2rem;
-       right: 5%; 
-       left: 10%;
-     }  
-}
-@media screen and (max-width: 576px){
-    .px-10 {
-       padding-right: 1rem !important;
-       padding-left: 0.5rem !important;
-     }
-    .carousel-caption {
-       display: none !important
-     }  
+@media screen and (max-width: 576px) {
+  .carousel-caption {
+      display: none !important
+  }
 }
